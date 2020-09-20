@@ -976,6 +976,7 @@ full_treble_only(`
       -init
       -shell
       -system_executes_vendor_violators
+      -vold
     } {
       vendor_file_type
       -same_process_hal_file
@@ -1010,6 +1011,7 @@ full_treble_only(`
     -shell
     -system_executes_vendor_violators
     -ueventd # reads /vendor/ueventd.rc
+    -vold
   } {
     vendor_file_type
     -same_process_hal_file
@@ -1333,6 +1335,7 @@ full_treble_only(`
     -perfprofd
     -heapprofd
     -ueventd
+    -vold
   } vendor_file:file { no_w_file_perms no_x_file_perms open };
 ')
 
